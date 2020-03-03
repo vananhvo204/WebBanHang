@@ -29,7 +29,7 @@ app.get('/:page',(req, res)=>{
         contact:'Contact Us',
         login:'Login/ Register',
         register:'Register',
-        checkout:'Product Checkout',
+        checkout:'Product Checkout'
     };
     let page=req.params.page;
     res.render(page,{banner: banners[page]});
